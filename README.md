@@ -3,28 +3,23 @@
 
 Void is a small "nopper" plugin for [IDA Pro](https://www.hex-rays.com/products/ida/). The plugin creates NOP'd areas though simple convenient actions to relevant right click menus.
 
-## Demo
+## Requirements
 
-![](https://i.imgur.com/vgsHJXw.png)
-
-## Versions
-
-* [IDA 7.0](https://github.com/dove-zp/ida.plugin.void/tree/7.0)
-* [IDA 7.5](https://github.com/dove-zp/ida.plugin.void/tree/7.5)
-
++ IDA 7.0
++ Python 2.7
 
 ## Installation
 
-Void is a cross-platform (Windows, macOS, Linux) Python 3 plugin and easy to install.
+Void is a cross-platform (Windows, macOS, Linux) Python 2 plugin and easy to install.
 
-* Download the latest [RELEASE](https://github.com/dove-zp/ida.plugin.void/releases).
+* Download the latest [RELEASE](https://github.com/dovezp/ida.plugin.void/releases).
 * From your IDA's python console, run the following command to find its plugin directory:
   * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
 
 * Copy the contents of this repository's `/plugin/` folder to the listed directory.
 * Restart your disassembler.
 
-This plugin is currently only supported for IDA 7.5.
+This plugin is currently only supported for IDA 7.0.
 
 ## Usage
 
@@ -90,8 +85,6 @@ An alternative usage is the hotkey (shift+f).
 
 ## Development History
 
-+ 2021/JAN/08
-  + Updated to support IDA 7.5 SDK
 + 2020/SEP/22
   + Added ZEROing feature(s)
     + ASCII
@@ -104,10 +97,11 @@ An alternative usage is the hotkey (shift+f).
 + 2020/SEP/21
   + Initial release
 
-
 ## License
 
-This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)).
+This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)). See the [LICENSE](./LICENSE.md) file for details.
+
+<!--  -->
 
 ## Feedback
 
