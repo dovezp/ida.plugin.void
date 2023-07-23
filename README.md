@@ -3,21 +3,16 @@
 
 Void is a small "nopper" plugin for [IDA Pro](https://www.hex-rays.com/products/ida/). The plugin creates NOP'd areas though simple convenient actions to relevant right click menus.
 
-## Demo
+## Requirements
 
-![](https://i.imgur.com/vgsHJXw.png)
-
-## Versions
-
-* [IDA 7.0](https://github.com/dove-zp/ida.plugin.void/tree/7.0)
-* [IDA 7.5](https://github.com/dove-zp/ida.plugin.void/tree/7.5)
-
++ IDA 7.5
++ Python 3
 
 ## Installation
 
 Void is a cross-platform (Windows, macOS, Linux) Python 3 plugin and easy to install.
 
-* Download the latest [RELEASE](https://github.com/dove-zp/ida.plugin.void/releases).
+* Download the latest [RELEASE](https://github.com/dovezp/ida.plugin.void/releases).
 * From your IDA's python console, run the following command to find its plugin directory:
   * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
 
@@ -104,10 +99,11 @@ An alternative usage is the hotkey (shift+f).
 + 2020/SEP/21
   + Initial release
 
-
 ## License
 
-This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)).
+This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)). See the [LICENSE](./LICENSE.md) file for details.
+
+<!--  -->
 
 ## Feedback
 
