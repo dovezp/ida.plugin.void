@@ -1,87 +1,11 @@
-# IDA - Plugin
-## Void - A 'No Operation' Generator
+# Void - A 'No Operation' Generator Plugin
 
-Void is a small "nopper" plugin for [IDA Pro](https://www.hex-rays.com/products/ida/). The plugin creates NOP'd areas though simple convenient actions to relevant right click menus.
+Welcome to the Void Plugin repository for [IDA Pro](https://www.hex-rays.com/products/ida/)! If you're a reverse engineer, security analyst, or software enthusiast who often works with IDA Pro, you're about to discover a handy tool that simplifies the process of generating 'no operation' (NOP) sequences.
 
-## Requirements
-
+## Notice
+This plugin branch is currently only supported for IDA 7.0.
 + IDA 7.0
 + Python 2.7
-
-## Installation
-
-Void is a cross-platform (Windows, macOS, Linux) Python 2 plugin and easy to install.
-
-* Download the latest [RELEASE](https://github.com/dovezp/ida.plugin.void/releases).
-* From your IDA's python console, run the following command to find its plugin directory:
-  * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
-
-* Copy the contents of this repository's `/plugin/` folder to the listed directory.
-* Restart your disassembler.
-
-This plugin is currently only supported for IDA 7.0.
-
-## Usage
-
-The Void plugin loads automatically when an IDB is opened. The plugin will populate right click menus in the Functions and Disassembly views with additional actions when appropriate.
-
-### Disassembly Window
-
-#### NOP Current Selection
-
-Right clicking a selected region in the disassembly view now provides an option to 'nop' the entire selection.
-
-An alternative usage is the hotkey (shift+s).
-
-#### NOP Current Instruction
-
-Right clicking a instruction object in the disassembly view now provides an option to 'nop' instruction.
-
-An alternative usage is the hotkey (shift+i).
-
-#### NOP Current Unknown
-
-Right clicking a unknown object in the disassembly view now provides an option to create a 'nop' instruction.
-
-An alternative usage is the hotkey (shift+u).
-
-#### NOP Current Data
-
-Right clicking a data object in the disassembly view now provides an option to 'nop' the data.
-
-An alternative usage is the hotkey (shift+d).
-
-#### ZERO Current Data
-
-Right clicking a data object in the disassembly view now provides an option to 'zero' the data.
-
-An alternative usage is the hotkey (shift+z).
-
-#### ZERO Current ASCII
-
-Right clicking a ascii string object in the disassembly view now provides an option to 'zero' the ascii string.
-
-An alternative usage is the hotkey (shift+a).
-
-#### NOP Current Function
-
-Right clicking a function in the disassembly view now provides an option to 'nop' the entire function.
-
-An alternative usage is the hotkey (shift+f).
-
-#### NOP Current Function Block
-
-Right clicking a function block in the disassembly view now provides an option to 'nop' the block function.
-
-An alternative usage is the hotkey (shift+b).
-
-### Functions Window
-
-### NOP Selected Function(s)
-
-Right clicking one or more functions in the function view now provides an option to 'nop' function(s).
-
-An alternative usage is the hotkey (shift+f).
 
 ## Development History
 
@@ -97,25 +21,80 @@ An alternative usage is the hotkey (shift+f).
 + 2020/SEP/21
   + Initial release
 
-## License
+### Installation
 
-This project is licensed under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)). See the [LICENSE](./LICENSE.md) file for details.
+Integrating Void into your IDA Pro environment is straightforward:
+
+1. Download the branch.
+2. Identify your IDA's plugin directory by running the following command in IDA's Python console:
+   * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
+3. Copy the contents of this repository's `/plugin/` folder into the designated directory.
+4. Restart IDA Pro.
+
+### Usage
+
+The Void Plugin enhances your workflow with a set of context-specific actions in both the Disassembly and Functions views. Here are some key actions you can perform:
+
+* ### Disassembly Window Actions
+    * #### NOP Current Selection
+        Right clicking a selected region in the disassembly view now provides an option to 'nop' the entire selection.
+
+        An alternative usage is the hotkey (shift+s).
+
+    * #### NOP Current Instruction
+        Right clicking a instruction object in the disassembly view now provides an option to 'nop' instruction.
+
+        An alternative usage is the hotkey (shift+i).
+
+    * #### NOP Current Unknown
+        Right clicking a unknown object in the disassembly view now provides an option to create a 'nop' instruction.
+
+        An alternative usage is the hotkey (shift+u).
+
+    * #### NOP Current Data
+        Right clicking a data object in the disassembly view now provides an option to 'nop' the data.
+
+        An alternative usage is the hotkey (shift+d).
+
+    * #### ZERO Current Data
+        Right clicking a data object in the disassembly view now provides an option to 'zero' the data.
+
+        An alternative usage is the hotkey (shift+z).
+
+    * #### ZERO Current ASCII
+        Right clicking a ascii string object in the disassembly view now provides an option to 'zero' the ascii string.
+
+        An alternative usage is the hotkey (shift+a).
+
+    * #### NOP Current Function
+        Right clicking a function in the disassembly view now provides an option to 'nop' the entire function.
+
+        An alternative usage is the hotkey (shift+f).
+
+    * #### NOP Current Function Block
+        Right clicking a function block in the disassembly view now provides an option to 'nop' the block function.
+
+        An alternative usage is the hotkey (shift+b).
+
+* ### Functions Window Actions
+    * ### NOP Selected Function(s)
+        Right clicking one or more functions in the function view now provides an option to 'nop' function(s).
+    
+        An alternative usage is the hotkey (shift+f).
+
+### License
+
+This project operates under the [BSD 3-Clause License (Revised)](https://tldrlegal.com/license/bsd-3-clause-license-(revised)) reflecting a commitment to open collaboration.
 
 <!--  -->
 
-## Feedback
+### Your Feedback Counts
 
-I welcome your constructive input - both negative and positive. I will continue to try to provide updates when able. At some point you may find errors, inconsistencies, or methods that could be improved, or are missing altogether. Your feedback is critical to help improve future revisions.
+Your insights and feedback, whether positive or constructive, are immensely valuable. Your contributions guide the refinement of the Void Plugin for future iterations.
 
-The best way to reach out is by opening a new issue in this repository:
+Share your thoughts by opening an issue in the [repository's issue section](https://github.com/dovezp/ida.plugin.void/issues). Be sure to provide context and links when sharing your feedback.
 
-https://github.com/dovezp/ida.plugin.void/issues
-
-Please be sure to refer to what your situation is when giving feedback and if possible link the topic in question.
-
-Many thanks.
-
-<hr/>
+Thank you for being an essential part of the Void Plugin's growth journey.
 
 <p align="center">
   <p align="center">
