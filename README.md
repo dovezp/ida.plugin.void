@@ -2,12 +2,15 @@
 
 Welcome to the Void Plugin repository for [IDA Pro](https://www.hex-rays.com/products/ida/)! If you're a reverse engineer, security analyst, or software enthusiast who often works with IDA Pro, you're about to discover a handy tool that simplifies the process of generating 'no operation' (NOP) sequences.
 
+### Repository Status Update
+Regarding the current status of the IDA Plugin Void repository. As you may have noticed, there have been no updates or developments since September 2020. It's noteworthy that while the plugin's most recent refactor for IDA 7.5 remains compatible with IDA 7.6 and 7.7, I must address an important consideration: no further updates have been undertaken to ensure future support due to the unavailability of licensing resources. In light of this prolonged inactivity, I have made the decision to archive the IDA Plugin Void repository.
+
 ### Highlights
 * Streamlined NOP Generation: Void Plugin provides a set of intuitive right-click actions that allow you to effortlessly create NOP'd areas in your disassembly view.
 
 * Enhanced Customization: By offering convenient right-click options for various objects, including instructions, data, functions, and more, the plugin puts the power of NOP generation at your fingertips.
 
-* Version Compatibility: Void Plugin is designed for IDA Pro versions [7.0](https://github.com/dove-zp/ida.plugin.void/tree/7.0) and [7.5](https://github.com/dove-zp/ida.plugin.void/tree/7.5), ensuring it caters to a wide range of users.
+* Version Compatibility: Void Plugin is designed for IDA Pro versions [7.0](https://github.com/dovezp/ida.plugin.void/tree/7.0) and [7.5](https://github.com/dovezp/ida.plugin.void/tree/7.5), ensuring it caters to a wide range of users.
 
 ### Feature Demo
 Witness the simplicity and efficiency of the Void Plugin in action:
@@ -18,7 +21,7 @@ Witness the simplicity and efficiency of the Void Plugin in action:
 
 Integrating Void into your IDA Pro environment is straightforward:
 
-1. Download the latest [RELEASE](https://github.com/dove-zp/ida.plugin.void/releases).
+1. Download the latest branch for either IDA Pro versions [7.0](https://github.com/dovezp/ida.plugin.void/tree/7.0), or [7.5](https://github.com/dovezp/ida.plugin.void/tree/7.5).
 2. Identify your IDA's plugin directory by running the following command in IDA's Python console:
   * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
 
