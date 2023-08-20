@@ -23,7 +23,7 @@ Integrating Void into your IDA Pro environment is straightforward:
 
 1. Download the latest branch for either IDA Pro versions [7.0](https://github.com/dovezp/ida.plugin.void/tree/7.0), or [7.5](https://github.com/dovezp/ida.plugin.void/tree/7.5).
 2. Identify your IDA's plugin directory by running the following command in IDA's Python console:
-  * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
+   * **IDA Pro**: `os.path.join(idaapi.get_user_idadir(), "plugins")`
 
 3. Copy the contents of this repository's `/plugin/` folder into the designated directory.
 4. Restart IDA Pro.
@@ -32,63 +32,52 @@ Integrating Void into your IDA Pro environment is straightforward:
 
 The Void Plugin enhances your workflow with a set of context-specific actions in both the Disassembly and Functions views. Here are some key actions you can perform:
 
-### Disassembly Window
+* ### Disassembly Window Actions
+    * #### NOP Current Selection
+        Right clicking a selected region in the disassembly view now provides an option to 'nop' the entire selection.
 
-#### NOP Current Selection
+        An alternative usage is the hotkey (shift+s).
 
-Right clicking a selected region in the disassembly view now provides an option to 'nop' the entire selection.
+    * #### NOP Current Instruction
+        Right clicking a instruction object in the disassembly view now provides an option to 'nop' instruction.
 
-An alternative usage is the hotkey (shift+s).
+        An alternative usage is the hotkey (shift+i).
 
-#### NOP Current Instruction
+    * #### NOP Current Unknown
+        Right clicking a unknown object in the disassembly view now provides an option to create a 'nop' instruction.
 
-Right clicking a instruction object in the disassembly view now provides an option to 'nop' instruction.
+        An alternative usage is the hotkey (shift+u).
 
-An alternative usage is the hotkey (shift+i).
+    * #### NOP Current Data
+        Right clicking a data object in the disassembly view now provides an option to 'nop' the data.
 
-#### NOP Current Unknown
+        An alternative usage is the hotkey (shift+d).
 
-Right clicking a unknown object in the disassembly view now provides an option to create a 'nop' instruction.
+    * #### ZERO Current Data
+        Right clicking a data object in the disassembly view now provides an option to 'zero' the data.
 
-An alternative usage is the hotkey (shift+u).
+        An alternative usage is the hotkey (shift+z).
 
-#### NOP Current Data
+    * #### ZERO Current ASCII
+        Right clicking a ascii string object in the disassembly view now provides an option to 'zero' the ascii string.
 
-Right clicking a data object in the disassembly view now provides an option to 'nop' the data.
+        An alternative usage is the hotkey (shift+a).
 
-An alternative usage is the hotkey (shift+d).
+    * #### NOP Current Function
+        Right clicking a function in the disassembly view now provides an option to 'nop' the entire function.
 
-#### ZERO Current Data
+        An alternative usage is the hotkey (shift+f).
 
-Right clicking a data object in the disassembly view now provides an option to 'zero' the data.
+    * #### NOP Current Function Block
+        Right clicking a function block in the disassembly view now provides an option to 'nop' the block function.
 
-An alternative usage is the hotkey (shift+z).
+        An alternative usage is the hotkey (shift+b).
 
-#### ZERO Current ASCII
-
-Right clicking a ascii string object in the disassembly view now provides an option to 'zero' the ascii string.
-
-An alternative usage is the hotkey (shift+a).
-
-#### NOP Current Function
-
-Right clicking a function in the disassembly view now provides an option to 'nop' the entire function.
-
-An alternative usage is the hotkey (shift+f).
-
-#### NOP Current Function Block
-
-Right clicking a function block in the disassembly view now provides an option to 'nop' the block function.
-
-An alternative usage is the hotkey (shift+b).
-
-### Functions Window
-
-### NOP Selected Function(s)
-
-Right clicking one or more functions in the function view now provides an option to 'nop' function(s).
-
-An alternative usage is the hotkey (shift+f).
+* ### Functions Window Actions
+    * ### NOP Selected Function(s)
+        Right clicking one or more functions in the function view now provides an option to 'nop' function(s).
+    
+        An alternative usage is the hotkey (shift+f).
 
 ### License
 
